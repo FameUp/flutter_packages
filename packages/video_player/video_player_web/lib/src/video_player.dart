@@ -59,6 +59,7 @@ class VideoPlayer {
   /// to react to them / expose them through the [VideoPlayer.events] stream.
   void initialize() {
     _videoElement
+      ..crossOrigin = 'use-credentials'
       ..autoplay = false
       ..controls = false;
 
