@@ -75,6 +75,7 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
 
     final VideoElement videoElement = VideoElement()
       ..id = 'videoElement-$textureId'
+      ..crossOrigin = 'use-credentials'
       ..src = uri
       ..style.border = 'none'
       ..style.height = '100%'
